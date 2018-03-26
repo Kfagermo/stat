@@ -14,18 +14,19 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <p>works</p>
-        <script src="/socket.io/socket.io.js"></script>
-        <script>
-            var socket = io();
-            
-            socket.on('connect', () => {
-                console.log('connected to server');
-            });
 
-            socket.on('disconnect', () => {
-                console.log('Disconnected');
-            });
-        </script>
+            <form action="/js/index.js">
+                Name:
+                <br>
+                <input type="text" name="name" value="">
+                <br>
+                <br>
+                <input type="submit" value="Send">
+            </form>
+
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/index.js"></script>
     </body>
 </html>
